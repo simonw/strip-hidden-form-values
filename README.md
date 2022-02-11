@@ -7,6 +7,10 @@
 
 CLI tool for stripping hidden form values from an HTML document
 
+Why would you need this? Imagine you're running a [Git scraper](https://simonwillison.net/2020/Oct/9/git-scraping/) against a website that includes hidden form fields (such as those produced by `__VIEWSTATE` fields) that change on every request. You can pipe the HTML through this tool to strip those hidden form values such that a change is only recorded if the rest of the page is modified in some way.
+
+[scrape-ca-wildlife-rules](https://github.com/simonw/scrape-ca-wildlife-rules) is an example of a repository that uses this tool for that, see the [scrape.yml](https://github.com/simonw/scrape-ca-wildlife-rules/blob/main/.github/workflows/scrape.yml) workflow there for details.
+
 ## Installation
 
 Install this tool using `pip`:
