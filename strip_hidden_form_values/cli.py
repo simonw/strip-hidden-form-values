@@ -27,7 +27,7 @@ def cli(input):
 
 class StripHiddenParser(HTMLParser):
     def __init__(self, output):
-        super().__init__()
+        super().__init__(convert_charrefs=False)
         self.output = output
 
     def handle_starttag(self, tag, attrs, end=">"):

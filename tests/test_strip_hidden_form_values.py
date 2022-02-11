@@ -14,7 +14,7 @@ import pytest
         <html lang="en">
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>Title</title>
+            <title>Title &amp; suchlike</title>
             <link rel="stylesheet" href="css/main.css" />
         </head>
         <body>
@@ -27,7 +27,7 @@ import pytest
         <html lang="en">
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>Title</title>
+            <title>Title &amp; suchlike</title>
             <link rel="stylesheet" href="css/main.css" />
         </head>
         <body>
@@ -45,7 +45,7 @@ import pytest
             <p>Form:
             <input type="text" name="name" value="default name">
             <input type="hidden" name="hidden_1" value="hidden value 1">
-            <input type="HIDDEN" name="hidden_2" value="hidden value 2">
+            <input type="HIDDEN" name="hidden&amp;2" value="hidden value 2">
             <input type="HiDDeN" name="hidden_3" value="hidden value 3" />
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="p8nVm4PgVPA" />
         </body>
@@ -58,7 +58,7 @@ import pytest
             <p>Form:
             <input type="text" name="name" value="default name">
             <input type="hidden" name="hidden_1" value="">
-            <input type="HIDDEN" name="hidden_2" value="">
+            <input type="HIDDEN" name="hidden&amp;2" value="">
             <input type="HiDDeN" name="hidden_3" value="" />
             <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
         </body>
