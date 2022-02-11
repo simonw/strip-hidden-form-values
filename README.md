@@ -15,7 +15,24 @@ Install this tool using `pip`:
 
 ## Usage
 
-Usage instructions go here.
+You can pipe HTML into this tool:
+
+    curl http://... | strip-hidden-form-values > output.html
+
+Or pass it a filename:
+
+    strip-hidden-form-values input.html > output.html
+
+The tool will replace the `value=` attribute of any hidden form fields with a blank string,
+so the following:
+
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="p8nVm4PgVPA" />
+
+Will be replaced with:
+
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+All other HTML will remain unchanged.
 
 ## Development
 

@@ -32,8 +32,6 @@ setup(
         strip-hidden-form-values=strip_hidden_form_values.cli:cli
     """,
     install_requires=["click"],
-    extras_require={
-        "test": ["pytest"]
-    },
+    extras_require={"test": ["pytest"]},
     python_requires=">=3.6",
 )
